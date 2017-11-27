@@ -19,7 +19,9 @@ Function Test-PsScripts {
         Import-Module PSScriptAnalyzer -Force
         Write-Host " PsScriptAnalyzer Imported"
         try {
-            Invoke-ScriptAnalyzer -Path $Folder -Recurse   
+            $DiagnosticRecord = Invoke-ScriptAnalyzer -Path $Folder -Recurse 
+            $diagnosticRecord | Select-Object $_
+            
         }
         catch {
             Write-Error $_.Exception
