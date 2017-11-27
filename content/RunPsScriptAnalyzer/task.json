@@ -1,0 +1,37 @@
+{
+    "id": "1bf78f8b-8e90-4715-abf4-daf7060d7a1e",
+    "name": "RunPsScriptAnalyzer",
+    "friendlyName": "Run PsScriptAnalyzer",
+    "description": "Tests if PsScriptAnalyzer is installed, and if not will install the module and run it against folder path.",
+    "helpMarkDown": "[More Information](https://msdn.microsoft.com/en-us/library/dd878337(v=vs.85).aspx)",
+    "category": "Package",
+    "author": "Richie Lee",
+    "version": {
+        "Major": 0,
+        "Minor": 5,
+        "Patch": 0
+    },
+    "demands": [
+        "Cmd"
+    ],
+    "minimumAgentVersion": "1.83.0",
+    "groups": [],
+    "instanceNameFormat": "Run PsScriptAnalyzer $(solution)",
+    "inputs": [
+        {
+            "name": "PsFolder",
+            "type": "filePath",
+            "label": "Folder Directory",
+            "defaultValue": "",
+            "helpMarkDown": "Fodler diretory to run PsScriptAnalyzer against.",
+            "required": true
+        }        
+    ],
+    "execution": {
+        "PowerShell": {
+            "target": "RunPsScriptAnalyzer.ps1",
+            "argumentFormat": "",
+            "workingDirectory": ""
+        }
+    }
+}
