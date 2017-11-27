@@ -1,5 +1,5 @@
 param(    
-    $PsFolder
+    $PsFolder #= $PSScriptRoot
 )
 Function Test-PsScripts {
     [cmdletbinding()]
@@ -20,7 +20,10 @@ Function Test-PsScripts {
         Write-Host " PsScriptAnalyzer Imported"
         try {
             $DiagnosticRecord = Invoke-ScriptAnalyzer -Path $Folder -Recurse 
-            $diagnosticRecord | Select-Object $_
+            ForEach ($r in $diagnosticRecord)
+            {
+                Write-Host $r.Message
+            }
             
         }
         catch {
