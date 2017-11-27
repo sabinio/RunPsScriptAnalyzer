@@ -22,6 +22,6 @@
     <Asset Type="RunPsScriptAnalyzer/task.json" d:Source="File" Path="RunPsScriptAnalyzer/task.json" Addressable="true" />
     <Asset Type="Microsoft.VisualStudio.Services.Content.Details" d:Source="File" Path="overview.md" Addressable="true" />
     <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" d:Source="File" Path="images/packageDefaultIcon.png" Addressable="true" />
-    <Asset Type="Microsoft.VisualStudio.Services.Manifest" d:Source="File" Path="extension.vsomanifest" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Manifest" d:Source="File" Path="vss-extension.json" Addressable="true" />
   </Assets>
 </PackageManifest>
