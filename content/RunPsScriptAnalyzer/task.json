@@ -23,7 +23,7 @@
             "type": "filePath",
             "label": "Folder Directory",
             "defaultValue": "",
-            "helpMarkDown": "Fodler diretory to run PsScriptAnalyzer against.",
+            "helpMarkDown": "Folder diretory to run PsScriptAnalyzer against.",
             "required": true
         }        
     ],
