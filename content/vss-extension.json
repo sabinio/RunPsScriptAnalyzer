@@ -1,9 +1,9 @@
 {
     "manifestVersion": 1,
     "version": "0.5.0",
-    "id": "AlterPsModuleVersion",
-    "name": "Alter PowerShell ModuleVersion Number",
-    "description": "Alter ModuleVersion Element stored in a Windows PowerShell data file (.psd1).",
+    "id": "RunPsScriptAnalyzer",
+    "name": "Run PsScriptAnalyzer",
+    "description": "Downloads PsScriptAnalyzer if not installed and run PScriptAnalyzer against a folder.",
     "categories": [
         "Build and release"
     ],
@@ -23,13 +23,13 @@
     },
     "contributions": [
         {
-            "id": "powershell-alter-moduleversion-task",
+            "id": "powershell-run-psscriptanalyzer-task",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "PsAlterModuleVersion"
+                "name": "RunPsScriptAnalyzer"
             }
         }
     ],
@@ -37,13 +37,13 @@
     "contributionTypes": [],
      "files": [
             {
-                "path": "PsAlterModuleVersion/icon.png", "addressable": true
+                "path": "RunPsScriptAnalyzer/icon.png", "addressable": true
             },
             {
-                "path": "PsAlterModuleVersion/PsAlterModuleVersion.ps1", "addressable": true
+                "path": "RunPsScriptAnalyzer/RunPsScriptAnalyzer.ps1", "addressable": true
             },
             {
-                "path": "PsAlterModuleVersion/task.json", "addressable": true
+                "path": "RunPsScriptAnalyzer/task.json", "addressable": true
             },
             {
                 "path": "images/packageDefaultIcon.png", "addressable": true
