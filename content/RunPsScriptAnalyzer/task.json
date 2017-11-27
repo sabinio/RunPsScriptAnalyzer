@@ -3,7 +3,7 @@
     "name": "RunPsScriptAnalyzer",
     "friendlyName": "Run PsScriptAnalyzer",
     "description": "Tests if PsScriptAnalyzer is installed, and if not will install the module and run it against folder path.",
-    "helpMarkDown": "[More Information](https://msdn.microsoft.com/en-us/library/dd878337(v=vs.85).aspx)",
+    "helpMarkDown": "[More Information](https://github.com/PowerShell/PSScriptAnalyzer)",
     "category": "Package",
     "author": "Richie Lee",
     "version": {
