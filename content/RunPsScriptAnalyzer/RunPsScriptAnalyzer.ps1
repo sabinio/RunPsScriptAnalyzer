@@ -1,11 +1,11 @@
 param(    
-    $PsFolder #= $PSScriptRoot
+    $PsFolder = $PSScriptRoot
 )
 Function Test-PsScripts {
     [cmdletbinding()]
     param(
         [ValidateNotNullOrEmpty()]
-        $Folder
+        $Folder       
     )
     try {
         Find-Module -Name "PsScriptAnalyzer"
@@ -23,6 +23,8 @@ Function Test-PsScripts {
             ForEach ($r in $diagnosticRecord)
             {
                 Write-Host $r.Message
+                Write-Host $r.Extent
+                Write-Host $r.RuleName
             }
             
         }
